@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sophia.usertest.dao.StudentDao">
+
+<resultMap type="com.sophia.usertest.vo.Student" id="Student">
+<id property="id" column="id" />
+  <result property="name" column="name"/>
+  <result property="sex" column="sex"/>
+    <result property="score" column="score"/>
+</resultMap>
+
+
+
+
+
+<select id="getStudents" resultType="com.sophia.usertest.vo.Student">
+select * from student 
+  	<if test="rows!=null and rows!=''">
+		limit #{page},#{rows}
+	</if>
+<!-- select * from users  -->
+</select>
+
+<select id="getstudentsList" resultType="com.sophia.usertest.vo.Student">
+select * from student
+  <!-- 	<if test="sex!=null and sex!=''">
+		where #{sex},#{rows}
+	</if> -->
+<!-- select * from users  -->
+</select>
+
+</mapper>
