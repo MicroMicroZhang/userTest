@@ -88,6 +88,15 @@ public class UserServiceImpl implements UserService {
 		return userDao.exportExcel();
 	}
 
+	@Override
+	public List<User> checkUser(User user) {
+		// TODO Auto-generated method stub
+	
+		List<User> u = new ArrayList<User>();
+		u.addAll(userDao.checkUser(user));
+		return u;
+	}
+
 
 
 }

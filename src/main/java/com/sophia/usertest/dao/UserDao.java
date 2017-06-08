@@ -18,4 +18,5 @@ public interface UserDao {
 	public List<User> getUserList();
 	public List<User> getUserList(@Param("page") Integer page,@Param("rows") Integer rows);
 	public List<User> exportExcel();
+	public List<User> checkUser(User user);
 }

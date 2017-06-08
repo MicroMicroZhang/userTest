@@ -167,16 +167,5 @@ public class HomeController {
 	}
 	
 
-	// @RequestMapping(value = "/login", method = RequestMethod.GET)
-	// public String login(Locale locale, Model model) {
-	//
-	// return "login";
-	// }
-	//
-	//
-	// @RequestMapping(value = "/login", method = RequestMethod.GET)
-	// public String login1(Locale locale, Model model) {
-	//
-	// return "success";
-	// }
+	
 }

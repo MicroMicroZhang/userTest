@@ -64,4 +64,19 @@ insert into users (name,password) values (#{user.name},#{user.password})
 update users set name=('${user.name}') , password = ('${user.password}') where id=('${user.id}')
 </update>
  
+ 
+<select id="checkUser" resultType="com.sophia.usertest.vo.User" parameterType="com.sophia.usertest.vo.User">
+select * from users where 1=1 
+   <if test="id!=null and id!=''">
+   and id=#{id}
+   </if>
+     <if test="name!=''">
+     and name=#{name}
+     </if>
+      <if test="password!=''">
+      and password=#{password}
+      </if>
+</select>
+
+ 
 </mapper>

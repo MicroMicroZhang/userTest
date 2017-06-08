@@ -17,4 +17,5 @@ public interface UserService {
 	public List<User> searchUser(User user);
 	public int getTotalAmoutOfUserList();
 	public List<User> exportExcel();
+	public List<User> checkUser(User user);
 }
