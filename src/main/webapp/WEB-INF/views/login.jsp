@@ -1,16 +1,16 @@
 <%@page pageEncoding="utf-8" 
 contentType="text/html;charset=utf-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<script type="text/javascript"
+<script type="text/javascript" 
 	src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
 
-	<script type="text/javascript" src="resources/js/login.js"></script>
-	    <link rel="stylesheet" type="text/css" href="resources/themes/default/easyui.css">
+	<script type="text/javascript" src="../resources/js/login.js"></script>
+<!-- 	    <link rel="stylesheet" type="text/css" href="resources/themes/default/easyui.css">
     <link rel="stylesheet" type="text/css" href="resources/themes/icon.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/demo.css"> 
+    <link rel="stylesheet" type="text/css" href="resources/css/demo.css">  -->
     <script type="text/javascript" src="resources/jquery.min.js"></script>
-    <script type="text/javascript" src="resources/jquery.easyui.min.js"></script>
-<%@ page session="false" %>
+<!--     <script type="text/javascript" src="resources/jquery.easyui.min.js"></script> -->
+<%-- <%@ page session="false" %> --%>
 <html>
 <head>
 	<title>LOGIN PAGE</title>
